@@ -1,0 +1,111 @@
+.welcome-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.welcome-p {
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.welcome-h1 {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.welcome-h2 {
+    font-size: 2rem;
+}
+
+.welcome-btn {
+    min-height: 40px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    background-color: #F5F5F5;
+    padding: 24px;
+}
+
+.welcome-text-container {
+    flex-shrink: 1;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-image-container {
+    width: min-content;
+    display: flex;
+    justify-content: center;
+}
+
+.shoe-image-welcome {
+    width: inherit;
+    height: 100%;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.Advantages {
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 20px 24px;
+    border-radius: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.container {
+    width: -webkit-fill-available;
+}
+
+.AdvCard-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.AdvCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.AdvCardImg {
+    max-width: 130px;
+    max-height: 130px;
+}
+
+.AdvCardDesc {
+    margin-top: 0;
+    font-weight: 450;
+    font-size: 1.125rem;
+}
+
+.AdvCardTitle {
+    font-size: 1.5rem;
+}
+
+#products-view {
+    line-height: normal;
+    font-size: 1.2rem;
+    margin: 5px 10px;
+}

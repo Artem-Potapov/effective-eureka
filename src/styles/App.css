@@ -1,3 +1,19 @@
+/* Стили на абсолютно весь сайт */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
+  font-family: Montserrat;
+  background: linear-gradient(134deg,rgb(222, 211, 211) 0%, rgb(206, 206, 206) 100%);
+}
+
+.clean-p {
+  margin: 0;
+}
+
+.page-container {
+  padding-left: 7.5% !important;
+  padding-right: 7.5% !important;
+  margin-top: 20px;
 }

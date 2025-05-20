@@ -5,11 +5,13 @@ import {
   createBrowserRouter,
   Navigate,
   RouterProvider,
+  useRouteError,
 } from "react-router-dom";
 import AppLayout from "./AppLayout";
-import Home from "./Home";
-import { useRoute } from "@react-navigation/native";
-import { useNavigate } from "react-router";
+import Home from "./pages/Home";
+import ErrorBoundary from "./pages/Error";
+import useFetch from "./custom-hooks/useFetch";
+import Products from "./pages/Products";
 
 const url = "https://jsonplaceholder.typicode.com/posts/";
 
@@ -21,11 +23,13 @@ function App() {
     
   }, [url]);
 
+  const { data: productsData } = useFetch(url);
+
   const router = createBrowserRouter([
       {
           path: "/",
           element: <AppLayout />,
-          errorElement: <div>Error</div>,
+          errorElement: <ErrorBoundary></ErrorBoundary>,
           children: [
               {
                   index: true,
@@ -35,6 +39,10 @@ function App() {
                   path: "/home",
                   element: <Home />,
               },
+              {
+                  path: "/products",
+                  element: <Products />
+              }
           ],
       },
   ]);
