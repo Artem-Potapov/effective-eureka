@@ -10,6 +10,7 @@ body {
     justify-content: space-between;
     background-color: #cb3737;
     font-size: 1.5rem;
+    margin-top: 0 !important;
 }
 
 .active {
@@ -138,4 +139,6 @@ div ::before, ::after  {
 
 #search-input {
     font-size: 1.25rem;
+    font-family: Montserrat;
+    letter-spacing: normal;
 }

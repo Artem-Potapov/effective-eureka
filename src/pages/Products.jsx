@@ -4,6 +4,8 @@ import { PacmanLoader } from "react-spinners";
 import ProductsSection from "../molecules/ProductsSection";
 import ProductCard from "../atoms/ProductCard";
 import { Box } from "@mui/material";
+import "../styles/products.css";
+import importantData from "../assets/prods.json";
 
 const url = "https://jsonplaceholder.typicode.com/posts/";
 
@@ -32,22 +34,24 @@ function Products() {
     );
   //конец загрузочного бара
 
-  console.log(productsData)
-  const products = productsData?.map((item, id) => {
+  console.log(importantData)
+  const products = importantData?.map((item, id) => {
     return (
       <ProductCard
         key={id}
         title={item.title}
-        img={"item.attributes?.productImage?.data?.attributes?.url"}
+        img={item.productImage?.data?.attributes?.url}
         body={item.body}
-        price={"item.productPrice"}
+        price={item.productPrice}
         id={item.id}
+        rating={item.rating}
       />
     );
   });
 
   return (
     <Box className="page-container">
+      <h1 className="section-title products-title">Каталог товаров</h1>
       <ProductsSection cards={products} />
     </Box>
   );
